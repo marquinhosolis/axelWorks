@@ -1,0 +1,118 @@
+.singleServiceIntro {
+    position: relative;
+    padding-bottom: 80px;
+
+    .singleServiceIntroText {
+        position: relative;
+        z-index: 1;
+        padding: 0 20px;
+        text-align: center;
+
+        h1 {
+            color: #374559;
+            font-size: 36px;
+            font-weight: 400;
+
+            @media (min-width: 768px) {
+                width: 65%;
+            }
+
+            @media (min-width: 1024px) {
+                width: 70%;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 48px;
+            }
+        }
+
+        .singleServiceIntroIcon {
+            @media (min-width: 768px) {
+                width: calc(35% - 20px);
+                margin-right: 20px;
+            }
+
+            @media (min-width: 1024px) {
+                width: calc(30% - 20px);
+            }
+        }
+
+        .singleServiceIntroCopy {
+            text-align: left;
+
+            h2 {
+                color: #374559;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29px;
+            }
+
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 48%;
+            max-width: 600px;
+            margin-left: auto;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+
+    .singleServiceIntroImage {
+        position: relative;
+        .serviceMask {
+            background-size: cover;
+            background-position: center center;
+            img {
+                display: block;
+            }
+        }
+
+        @media (max-width: 767px) {
+            width: 85%;
+            margin-left: auto;
+        }
+
+        @media (min-width: 768px) {
+            width: 40%;
+            margin-left: 10%;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}
+
+.singleService {
+    margin-bottom: 80px;
+
+    .howItWorks {
+        .howItWorksPageTitle {
+            max-width: 850px;
+        }
+
+        .howItWorksSteps {
+            margin-top: 80px;
+        }
+
+        .btn {
+            @media (min-width: 768px) {
+                font-size: 24px;
+            }
+        }
+    }
+}

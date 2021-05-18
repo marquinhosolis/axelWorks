@@ -1,0 +1,88 @@
+footer{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .footerContent{
+        margin-bottom: 30px;
+        .footerLogo{
+            max-width: 130px;
+            margin: auto;
+            margin-bottom: 30px;
+            @media(min-width:768px){
+                margin: 0 20px;
+                //margin-left: 20px;
+            }
+            @media(min-width:1200px){
+                max-width: 100%;
+                margin: 0 40px;
+            }
+        }
+        .footerPhone{
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: solid 2px #acacac;;
+            font-size: 18px;
+            color: #374559;
+            font-weight: 400;
+            span{
+                color: #f0412e;
+                font-style: italic;
+            }
+            @media(min-width:768px){
+                margin-left: 0px;
+            }
+            @media(min-width:1200px){
+                font-size: 22px;
+            }
+        }
+        address{
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: solid 2px #acacac;;
+            font-size: 18px;
+            color: #374559;
+            font-weight: 400;
+            font-style: normal;
+            @media(min-width:768px){
+                margin-left: 0px;
+            }
+            @media(min-width:1200px){
+                font-size: 22px;
+            }
+        }
+        @media(min-width:768px){
+            width: 50%;
+            display: flex;
+            max-width: 550px;
+            margin-left: auto;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
+    .footerAppend{
+        display: flex;
+        align-items: center;
+        .dppaLogo{
+            width: 30%;
+            text-align: center;
+        }
+        .footerAppendImage{
+            width: 70%;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        @media(min-width:768px){
+            width: 50%;
+            align-self: flex-end;
+        }
+    }
+    @media(min-width:768px){
+        display: flex;
+        align-items: center;
+    }
+}

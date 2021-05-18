@@ -1,0 +1,71 @@
+.reconstructionGallery {
+    padding: 50px 0;
+    background-color: #eff2f7;
+    .container {
+        padding: 0;
+    }
+    .reconstructionGalleryTitle {
+        max-width: 320px;
+        margin: auto;
+        position: relative;
+
+        h3 {
+            margin: 0;
+            text-align: center;
+            color: #374559;
+            font-size: 36px;
+            font-weight: 400;
+
+            @media (min-width: 1200px) {
+                font-size: 48px;
+            }
+        }
+
+        .append {
+            position: absolute;
+            max-width: 40px;
+
+            &:first-child {
+                margin-right: 20px;
+                left: 0;
+                bottom: -20px;
+                right: 0;
+                transform: scaleY(-1);
+            }
+
+            &:last-child {
+                top: -20px;
+                right: 0;
+                transform: scaleX(-1);
+                margin-left: 20px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 450px;
+        }
+    }
+    .flexslider {
+        margin-top: 50px;
+    }
+    @media (min-width: 768px) {
+        padding: 80px 0;
+    }
+}
+
+.reconstructionGallerySlide {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+        @include ratio(4, 3);
+        width: calc(50% - 10px);
+        margin: 5px;
+        @media (min-width: 768px) {
+            width: calc(33% - 20px);
+            margin: 10px;
+        }
+    }
+}

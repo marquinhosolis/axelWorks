@@ -1,0 +1,62 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all linear 1s;
+    z-index: 11;
+    padding: 10px 0;
+    background-color: #eff2f7;
+
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logoHeader {
+    max-width: 90px;
+    transition: all linear 0.35s;
+    @media(min-width: 1024px) {
+        max-width: 100%;
+    }
+}
+
+.hamburger {
+    color: #374559;
+    font-size: 32px;
+    text-decoration: none;
+
+    .fa-times {
+        display: none;
+    }
+
+    @media(min-width: 768px) {
+        display: none;
+    }
+}
+
+.hamburger--open {
+    .fa-bars { 
+        display: none;
+    }
+
+    .fa-times {
+        display: block;
+    }
+}
+
+.header--fixed{
+    @media(min-width: 768px) {
+        padding: 0;
+        .logoHeader{
+            width: 90px;
+        }
+        .headerMenu ul .subMenu{
+            top: 55px;
+        }
+    }
+}
+
+@import 'menu';

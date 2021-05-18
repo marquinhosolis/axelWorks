@@ -1,0 +1,143 @@
+header {
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            a {
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.hasSubMenu {
+    a {
+        &:after {
+            display: inline;
+            margin-left: 3px;
+            font-family: FontAwesome;
+            content: "\f107";
+        }
+    }
+}
+
+.subMenu {
+    display: none;
+
+    li {
+        padding-left: 20px;
+    }
+
+    a {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.menuMobile {
+    transition: all linear 0.25s;
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    overflow: hidden;
+    top: 80px;
+    right: 0px;
+    height: calc(100% - 80px);
+    overflow: auto;
+    background-color: #eff2f7;
+    text-align: center;
+
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            margin: 10px 0;
+            a {
+                padding: 15px 30px;
+                text-decoration: none;
+                color: #543a37;
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+
+        .subMenu {
+            li {
+                a {
+                    color: rgba(#543a37, 0.7);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menuMobile--visible {
+    width: 100%;
+    overflow: hidden;
+}
+
+.headerMenu {
+    display: none;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        li {
+            position: relative;
+
+            a {
+                font-size: 13px;
+                color: #374559;
+                padding: 10px;
+
+                @media (min-width: 1024px) {
+                    font-size: 16px;
+                    padding: 10px 15px;
+                }
+            }
+        }
+
+        .subMenu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 100%;
+            background-color: #eff2f7;
+
+            li {
+                padding: 0;
+
+                a {
+                    &:hover {
+                        background-color: #374559;
+                        color: #fff;
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+
+            @media (min-width: 1024px) {
+                top: 70px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}

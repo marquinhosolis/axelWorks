@@ -1,0 +1,59 @@
+.page404 {
+    padding: 30px 0;
+    margin-bottom: 50px;
+
+    @media(min-width:768px) {
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.page404Image {
+    @media(min-width:768px) {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.page404Text {
+    padding: 0 30px;
+    text-align: center;
+
+    h1 {
+        color: #374559;
+        font-size: 100px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 30px;
+        line-height: 1;
+
+        @media(min-width:1200px) {
+            font-size: 200px;
+        }
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 20px;
+        ;
+        color: #374559;
+        font-size: 24px;
+        font-weight: 400;
+
+        @media(min-width:1200px) {
+            font-size: 32px;
+        }
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+
+    @media(min-width:768px) {
+        width: 40%;
+    }
+}
